@@ -62,7 +62,7 @@ const AdminPanel = () => {
     
     try {
       const searchParam = search ? `&search=${encodeURIComponent(search)}` : '';
-      const url = `http://192.168.31.61:5003/api/packages?page=${page}&limit=${itemsPerPage}${searchParam}`;
+      const url = `https://api.perpenny.in/api/packages?page=${page}&limit=${itemsPerPage}${searchParam}`;
       
       console.log('Fetching packages from:', url);
       
@@ -103,7 +103,7 @@ const AdminPanel = () => {
     setFormsError(null);
     
     try {
-      const response = await fetch('http://192.168.31.61:5003/api/queryform');
+      const response = await fetch('https://api.perpenny.in/api/queryform');
       if (!response.ok) {
         throw new Error('Failed to fetch forms');
       }

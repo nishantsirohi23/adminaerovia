@@ -46,7 +46,7 @@ const PackageEditor = () => {
   const handleSave = async () => {
     try {
       await axios.put(
-        `http://192.168.31.61:5003/api/packages/edit/${id}`,
+        `https://api.perpenny.in/api/packages/edit/${id}`,
         packageData
       );
       alert('Package updated successfully.');

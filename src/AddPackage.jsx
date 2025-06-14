@@ -115,7 +115,7 @@ const AddPackage = () => {
     setSubmitting(true);
     try {
       // Simulating API call since axios is not available
-      await axios.post('http://192.168.31.61:5003/api/packages', formData);
+      await axios.post('https://api.perpenny.in/api/packages', formData);
       setMessage('Package added successfully.');
       setFormData(initialPackage);
       setErrors({});

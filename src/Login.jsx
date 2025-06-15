@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     setError('');
 
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'admin' && password === 'admin1234') {
         localStorage.setItem('isLoggedIn', 'true');
         navigate('/admin');
         

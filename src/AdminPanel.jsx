@@ -41,7 +41,7 @@ const AdminPanel = () => {
   const [totalPackages, setTotalPackages] = useState(0);
   const [packageSearch, setPackageSearch] = useState('');
   const [searchInput, setSearchInput] = useState('');
-  const itemsPerPage = 6;
+  const itemsPerPage = 50;
 
   // Forms state
   const [forms, setForms] = useState([]);
@@ -402,7 +402,7 @@ const AdminPanel = () => {
   const PackagesContent = () => (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <h2 className="text-2xl font-bold text-white">Travel Packages</h2>
+        <h2 className="text-2xl font-bold text-white">Travel Packagessss</h2>
         <div className="flex gap-2">
           <button 
             onClick={() => fetchPackages(currentPage, packageSearch)}

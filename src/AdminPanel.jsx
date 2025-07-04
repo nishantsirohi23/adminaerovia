@@ -633,6 +633,8 @@ const AdminPanel = () => {
         return <PackagesContent />;
       case 'trending':
         return <TrendingContent />;
+        case 'users':
+          return <TrendingContent />;
       default:
         return (
           <div className="flex items-center justify-center h-64">
